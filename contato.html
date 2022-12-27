@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>[Contato_Barbearia_Alura]</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1><img class="logo_topo" src="icons/logo1.jpg" alt=""></h1>
+      <nav>
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="produtos.html">produtos</a></li>
+          <li><a href="">contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form action="">
+      <label for="nome_sobrenome">nome e sobrenome:</label>
+      <input type="text" id="nome_sobrenome" class="input-padrao" placeholder="Fulano Detal" required>
+
+      <label for="email">email:</label>
+      <input type="email" id="email" class="input-padrao" placeholder="email@email.com" required>
+
+      <label for="telefone">telefone:</label>
+      <input type="number" id="telefone" class="input-padrao" placeholder="11 999999999" required>
+
+      <label for="mensagem">mensagem:</label>
+      <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea  required >
+      
+      
+      <fieldset class="tipo-contato">
+
+        
+
+        <br><br>
+        <legend id="tipo_contato">como prefere ser contatado:</legend> <br>
+
+        <input type="radio" name="contato" value="email" id="radio-email" class="radio">
+        <label for="radio-email">_email</label>
+
+
+        <input type="radio" name="contato" value="telefone" id="radio-telefone" class="radio">
+        <label for="radio-telefone">_telefone</label>
+
+
+        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" class="radio" checked>
+        <label for="radio-whatsapp">_whatsapp</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>qual horário prefere ser atendido?</legend>
+        <select class="selecao">
+          <option value="">manhã</option>
+          <option value="">tarde</option>
+          <option value="">noite</option>
+        </select>
+      </fieldset>
+      
+      <label class="checkbox"> Gostaria de receber nossas novidades por email? <input type="checkbox"></label>
+
+
+      <input type="submit" value="enviar formulário" class="enviar">
+    </form>
+    <table class="tabela">
+      <thead>
+        <tr>
+        <th>DIA</th>
+        <th>HORÁRIO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>segunda</td>
+          <td>8h - 20h</td>
+        </tr>
+        <tr>
+          <td>quarta</td>
+          <td>8h - 20h</td>
+        </tr>
+        <tr>
+          <td>sexta</td>
+          <td>8h - 20h</td>
+        </tr>
+        <tr>
+          <td>sábado</td>
+          <td>10h - 19h</td>
+        </tr>
+      </tbody>
+      
+    </table>
+
+
+
+  </main>
+</body>
+<footer>
+  <img id="logo_rodape" src="icons/cadeira.png">
+  <p class="copyright">&copy; copyright - Old School Barbershop - 1988</p>
+
+</footer>
+
+</html>
